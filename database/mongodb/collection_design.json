@@ -1,0 +1,66 @@
+{
+  "collection_name": "market_timeseries",
+  "description": "Time series financial market data with embedded technical indicators",
+  "sample_documents": [
+    {
+      "_id": "2026-02-25",
+      "date": "2026-02-25T00:00:00Z",
+      "equities": {
+        "us": 687.35,
+        "tech": 607.87,
+        "emerging": 62.62
+      },
+      "commodities": {
+        "gold": 474.61,
+        "oil": 80.76
+      },
+      "crypto": {
+        "bitcoin": 65568.49
+      },
+      "bonds": {
+        "longterm": 89.90
+      },
+      "indicators": {
+        "volatility_index": 19.55,
+        "financial_stress_index": -0.6208,
+        "yield_curve_spread": 0.61,
+        "high_yield_spread": 2.95
+      },
+      "technical": {
+        "spy_drawdown": -0.0117,
+        "spy_rsi_14": 50.32,
+        "gld_rsi_14": 58.72
+      }
+    },
+    {
+      "_id": "2026-02-24",
+      "date": "2026-02-24T00:00:00Z",
+      "equities": {
+        "us": 687.35,
+        "tech": 607.87,
+        "emerging": 62.62
+      },
+      "commodities": {
+        "gold": 474.61,
+        "oil": 80.76
+      },
+      "crypto": {
+        "bitcoin": 64616.74
+      },
+      "indicators": {
+        "volatility_index": 19.55,
+        "financial_stress_index": -0.6208
+      }
+    }
+  ],
+  "indexes": [
+    {
+      "field": "date",
+      "type": "ascending"
+    },
+    {
+      "field": "indicators.financial_stress_index",
+      "type": "ascending"
+    }
+  ]
+}
