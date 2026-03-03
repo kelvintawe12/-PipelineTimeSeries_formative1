@@ -1,0 +1,153 @@
+[
+  {
+    "_id": "2026-02-20",
+    "date": "2026-02-20T00:00:00Z",
+    "equities": {
+      "us": 680.25,
+      "tech": 605.50,
+      "emerging": 61.80
+    },
+    "commodities": {
+      "gold": 472.30,
+      "oil": 80.10
+    },
+    "crypto": {
+      "bitcoin": 63800.00
+    },
+    "bonds": {
+      "longterm": 89.50
+    },
+    "indicators": {
+      "volatility_index": 21.50,
+      "financial_stress_index": -0.5900,
+      "yield_curve_spread": 0.65,
+      "high_yield_spread": 3.10
+    }
+  },
+  {
+    "_id": "2026-02-21",
+    "date": "2026-02-21T00:00:00Z",
+    "equities": {
+      "us": 681.50,
+      "tech": 606.20,
+      "emerging": 62.10
+    },
+    "commodities": {
+      "gold": 473.50,
+      "oil": 80.45
+    },
+    "crypto": {
+      "bitcoin": 64200.00
+    },
+    "bonds": {
+      "longterm": 89.70
+    },
+    "indicators": {
+      "volatility_index": 21.20,
+      "financial_stress_index": -0.5850,
+      "yield_curve_spread": 0.63,
+      "high_yield_spread": 3.05
+    }
+  },
+  {
+    "_id": "2026-02-22",
+    "date": "2026-02-22T00:00:00Z",
+    "equities": {
+      "us": 682.10,
+      "tech": 606.80,
+      "emerging": 62.30
+    },
+    "commodities": {
+      "gold": 474.10,
+      "oil": 80.60
+    },
+    "crypto": {
+      "bitcoin": 64450.00
+    },
+    "bonds": {
+      "longterm": 89.85
+    },
+    "indicators": {
+      "volatility_index": 20.80,
+      "financial_stress_index": -0.6100,
+      "yield_curve_spread": 0.62,
+      "high_yield_spread": 3.00
+    }
+  },
+  {
+    "_id": "2026-02-23",
+    "date": "2026-02-23T00:00:00Z",
+    "equities": {
+      "us": 682.39,
+      "tech": 607.15,
+      "emerging": 62.45
+    },
+    "commodities": {
+      "gold": 474.35,
+      "oil": 80.68
+    },
+    "crypto": {
+      "bitcoin": 64580.00
+    },
+    "bonds": {
+      "longterm": 89.90
+    },
+    "indicators": {
+      "volatility_index": 21.01,
+      "financial_stress_index": -0.6150,
+      "yield_curve_spread": 0.61,
+      "high_yield_spread": 2.98
+    }
+  },
+  {
+    "_id": "2026-02-24",
+    "date": "2026-02-24T00:00:00Z",
+    "equities": {
+      "us": 687.35,
+      "tech": 607.87,
+      "emerging": 62.62
+    },
+    "commodities": {
+      "gold": 474.61,
+      "oil": 80.76
+    },
+    "crypto": {
+      "bitcoin": 64616.74
+    },
+    "bonds": {
+      "longterm": 89.90
+    },
+    "indicators": {
+      "volatility_index": 19.55,
+      "financial_stress_index": -0.6208,
+      "yield_curve_spread": 0.61,
+      "high_yield_spread": 2.95
+    }
+  },
+  {
+    "_id": "2026-02-25",
+    "date": "2026-02-25T00:00:00Z",
+    "equities": {
+      "us": 687.35,
+      "tech": 607.87,
+      "emerging": 62.62
+    },
+    "commodities": {
+      "gold": 474.61,
+      "oil": 80.76
+    },
+    "crypto": {
+      "bitcoin": 65568.49
+    },
+    "bonds": {
+      "longterm": 89.90
+    },
+    "indicators": {
+      "volatility_index": 19.55,
+      "financial_stress_index": -0.6208,
+      "yield_curve_spread": 0.61,
+      "high_yield_spread": 2.95
+    }
+  }
+]
+

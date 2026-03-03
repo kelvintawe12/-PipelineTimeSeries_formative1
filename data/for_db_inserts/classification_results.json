@@ -1,0 +1,25 @@
+[
+  {
+    "Model": "Logistic",
+    "Params": {
+      "max_iter": 1000
+    },
+    "Accuracy": 0.5234
+  },
+  {
+    "Model": "RF Clf",
+    "Params": {
+      "n_estimators": 50,
+      "max_depth": 8
+    },
+    "Accuracy": 0.5512
+  },
+  {
+    "Model": "RF Clf",
+    "Params": {
+      "n_estimators": 200,
+      "max_depth": 15
+    },
+    "Accuracy": 0.5733
+  }
+]

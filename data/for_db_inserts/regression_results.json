@@ -1,0 +1,26 @@
+[
+  {
+    "Model": "Linear Reg",
+    "Params": {},
+    "RMSE": 0.012345,
+    "R\u00b2": 0.1234
+  },
+  {
+    "Model": "RF Reg",
+    "Params": {
+      "n_estimators": 50,
+      "max_depth": 8
+    },
+    "RMSE": 0.009876,
+    "R\u00b2": 0.2345
+  },
+  {
+    "Model": "RF Reg",
+    "Params": {
+      "n_estimators": 200,
+      "max_depth": 15
+    },
+    "RMSE": 0.008765,
+    "R\u00b2": 0.289
+  }
+]
