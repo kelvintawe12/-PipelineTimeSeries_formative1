@@ -52,9 +52,9 @@ This project implements a complete end-to-end machine learning pipeline for time
 
 | Member   | Task       | Contributions                                      |
 |----------|------------|---------------------------------------------------|
-| Kelvin   | Task 1     | EDA, Preprocessing, Model Training               |
+| Glory    | Task 1     | EDA, Preprocessing, Model Training               |
 | Michael  | Task 2     | SQL Schema, MongoDB Design, ERD                 |
-| Team     | Task 3     | API Development, CRUD Endpoints                  |
+| Kelvin   | Task 3     | API Development, CRUD Endpoints                  |
  Task 4    | Team     | | Prediction Script, Pipeline Integration          |
 
 ---
