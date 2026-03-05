@@ -166,7 +166,7 @@ def get_mongo_db():
     Get the MongoDB database instance.
     """
     client = get_mongo_client()
-    if client:
+    if client is not None:
         return client[settings.MONGODB_DATABASE]
     return None
 
@@ -176,7 +176,7 @@ def get_mongo_collection():
     Get the MongoDB collection for market timeseries data.
     """
     db = get_mongo_db()
-    if db:
+    if db is not None:
         return db[settings.MONGODB_COLLECTION]
     return None
 
