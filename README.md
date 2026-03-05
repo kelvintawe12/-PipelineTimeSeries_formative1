@@ -39,6 +39,12 @@ This project implements a complete end-to-end machine learning pipeline for time
 |                                    |                                                   |
 |                                    v                                                   |
 |                         +------------------+                                            |
+|                         |   FASTAPI API    |                                            |
+|                         |   (19 Endpoints) |                                            |
+|                         +------------------+                                            |
+|                                    |                                                   |
+|                                    v                                                   |
+|                         +------------------+                                            |
 |                         |   PREDICTION     |                                            |
 |                         |   SCRIPT         |                                            |
 |                         +------------------+                                            |
@@ -96,7 +102,8 @@ The objective is to predict daily returns for US Equities using the Global Marke
 │       ├── collection_design.json       # MongoDB: Collection schema
 │       └── queries.js                   # MongoDB: 3+ example queries
 ├── api/
-│   └── app.py                           # Flask API with 16 endpoints
+│   ├── app.py                           # Flask API with 16 endpoints
+│   └── fastapi_app.py                   # FastAPI with 19 endpoints
 ├── scripts/
 │   ├── predict.py                       # End-to-end prediction script
 │   └── save_model.py                    # Model saving utility
@@ -626,6 +633,26 @@ mongoimport --uri "mongodb://localhost:27017" \
 ```bash
 python api/app.py
 ```
+
+### Step 6: Run FastAPI Server (Optional - Alternative to Flask)
+
+```bash
+# Using uvicorn directly
+uvicorn api.fastapi_app:app --host 0.0.0.0 --port 5001
+
+# Or using python
+python api/fastapi_app.py
+```
+
+The FastAPI server provides:
+- Auto-generated OpenAPI documentation at `/docs`
+- ReDoc documentation at `/redoc`
+- 19 endpoints (SQL CRUD, MongoDB CRUD, Prediction)
+- CORS and GZip compression enabled
+
+**FastAPI Documentation:**
+- Swagger UI: http://localhost:5001/docs
+- ReDoc: http://localhost:5001/redoc
 
 ### Step 6: Test Prediction
 
