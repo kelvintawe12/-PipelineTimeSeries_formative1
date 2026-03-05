@@ -434,7 +434,7 @@ def health():
     
     # Check MongoDB connection
     try:
-        mongo_status = 'connected' if get_mongo_collection() else 'disconnected'
+        mongo_status = 'connected' if get_mongo_collection() is not None else 'disconnected'
     except:
         mongo_status = 'disconnected'
     
