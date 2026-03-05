@@ -14,7 +14,7 @@ class Config:
     
     # Flask settings
     FLASK_HOST = os.getenv('FLASK_HOST', '0.0.0.0')
-    FLASK_PORT = int(os.getenv('FLASK_PORT', 5000))
+    FLASK_PORT = int(os.getenv('FLASK_PORT', 5001))
     FLASK_DEBUG = os.getenv('FLASK_DEBUG', 'True').lower() == 'true'
     
     # MySQL Database settings
@@ -45,7 +45,7 @@ class Config:
 
 # Flask settings
 FLASK_HOST = os.getenv('FLASK_HOST', '0.0.0.0')
-FLASK_PORT = int(os.getenv('FLASK_PORT', 5000))
+FLASK_PORT = int(os.getenv('FLASK_PORT', 5001))
 FLASK_DEBUG = os.getenv('FLASK_DEBUG', 'True').lower() == 'true'
 
 # MySQL Database settings
