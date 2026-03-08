@@ -61,7 +61,7 @@ This project implements a complete end-to-end machine learning pipeline for time
 |Glory Ojimaojo Paul    | Task 1     | EDA, Preprocessing, Model Training                 |
 |Michael Maina Kimani   | Task 2     | SQL Schema, MongoDB Design, ERD                    |
 |Kelvin Tawe            | Task 3     | API Development, CRUD Endpoints                    |
-|Team 4                 | Task 4     |Prediction Script, Pipeline Integration             |
+|Sheryl Atieno Otieno   | Task 4     |Prediction Script, Pipeline Integration             |
 
 ---
 
