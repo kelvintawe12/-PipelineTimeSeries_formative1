@@ -511,6 +511,50 @@ db.market_timeseries.aggregate([
 
 ---
 
+## FastAPI Endpoints (Alternative API)
+
+The FastAPI implementation provides 19 endpoints with enhanced features including automatic documentation, type validation, and better performance.
+
+### API Endpoints (19 Total)
+
+#### Root and Health
+
+| Method | Endpoint    | Description                         |
+|--------|-------------|-------------------------------------|
+| GET    | `/`         | API information                     |
+| GET    | `/health`   | Health check (SQL and MongoDB status) |
+
+#### SQL CRUD Operations (FastAPI)
+
+| Method | Endpoint                          | Description            |
+|--------|-----------------------------------|------------------------|
+| POST   | `/api/sql/market-data`           | Create record          |
+| GET    | `/api/sql/market-data`           | Get all records        |
+| GET    | `/api/sql/market-data/latest`    | Get latest record      |
+| GET    | `/api/sql/market-data/range`    | Get by date range      |
+| PUT    | `/api/sql/market-data/{date}`   | Update record          |
+| DELETE | `/api/sql/market-data/{date}`   | Delete record          |
+
+#### MongoDB CRUD Operations (FastAPI)
+
+| Method | Endpoint                            | Description              |
+|--------|-------------------------------------|--------------------------|
+| POST   | `/api/mongo/market-data`           | Create document          |
+| POST   | `/api/mongo/market-data/bulk`      | Bulk insert test results |
+| GET    | `/api/mongo/market-data`           | Get all documents        |
+| GET    | `/api/mongo/market-data/latest`    | Get latest document      |
+| GET    | `/api/mongo/market-data/range`     | Get by date range        |
+| PUT    | `/api/mongo/market-data/{date}`    | Update document          |
+| DELETE | `/api/mongo/market-data/{date}`    | Delete document          |
+
+#### Prediction (FastAPI)
+
+| Method | Endpoint   | Description                    |
+|--------|------------|--------------------------------|
+| POST   | `/api/predict` | Make prediction with input data |
+
+---
+
 ## Task 4: Prediction Script
 
 ### End-to-End Pipeline Flow
@@ -698,4 +742,60 @@ python scripts/predict.py
 ## License
 
 MIT License - Academic Project
+
+---
+
+## API Endpoints (FastAPI)
+
+Below are the main REST API endpoints provided by the FastAPI app. These endpoints allow you to interact with both SQL and MongoDB databases, as well as run predictions using the trained model.
+
+### System Endpoints
+
+- `GET /` — Root endpoint. Returns API metadata and available endpoints.
+- `GET /health` — Health check for SQL, MongoDB, and model status.
+
+### SQL Endpoints
+
+- `POST /api/sql/market-data` — Create a new market data record in SQL.
+- `GET /api/sql/market-data` — Read all market data records from SQL.
+- `GET /api/sql/market-data/latest` — Read the latest market data record from SQL.
+- `GET /api/sql/market-data/range` — Read market data records in a date range from SQL.
+- `PUT /api/sql/market-data/{date}` — Update a market data record by date in SQL.
+- `DELETE /api/sql/market-data/{date}` — Delete a market data record by date in SQL.
+
+### MongoDB Endpoints
+
+- `POST /api/mongo/market-data` — Create a new market data document in MongoDB.
+- `POST /api/mongo/market-data/bulk` — Bulk insert test results from JSON file into MongoDB.
+- `GET /api/mongo/market-data` — Read all market data documents from MongoDB.
+- `GET /api/mongo/market-data/latest` — Read the latest market data document from MongoDB.
+- `GET /api/mongo/market-data/range` — Read market data documents in a date range from MongoDB.
+- `PUT /api/mongo/market-data/{date}` — Update a market data document by date in MongoDB.
+- `DELETE /api/mongo/market-data/{date}` — Delete a market data document by date in MongoDB.
+
+### Prediction Endpoint
+
+- `POST /api/predict` — Run a prediction using the trained model. Returns the predicted value and direction (up/down).
+
+#### Example: Bulk Insert to MongoDB
+
+To bulk insert test results into MongoDB from the provided JSON file:
+
+```sh
+curl -X POST http://localhost:5001/api/mongo/market-data/bulk
+```
+
+This will read `data/for_db_inserts/test_results.json` and insert all records into the configured MongoDB collection.
+
+#### Example: Health Check
+
+```sh
+curl -X GET http://localhost:5001/health
+```
+
+This returns the status of the API, SQL, MongoDB, and model loading.
+
+---
+
+For more usage examples, see `USAGE.md`.
 
